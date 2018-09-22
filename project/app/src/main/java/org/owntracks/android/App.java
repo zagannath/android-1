@@ -83,6 +83,7 @@ public class App extends Application  {
 
     private void onEnterForeground() {
         Timber.v("entering foreground");
+	    Timber.v("entering background git");
         inForeground = true;
         sAppComponent.runner().postOnBackgroundHandler(new Runnable() {
             @Override
