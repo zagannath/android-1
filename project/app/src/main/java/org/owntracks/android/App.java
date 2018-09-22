@@ -100,6 +100,7 @@ public class App extends Application  {
         Timber.v("entering background");
 	    Timber.v("entering background git");
         Timber.v("entering background stash1");
+	    Timber.v("entering background git3");
 
         inForeground = false;
         sAppComponent.runner().postOnBackgroundHandler(new Runnable() {
