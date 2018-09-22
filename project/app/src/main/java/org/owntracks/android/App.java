@@ -84,6 +84,7 @@ public class App extends Application  {
     private void onEnterForeground() {
         Timber.v("entering foreground");
 	    Timber.v("entering background git");
+	    Timber.v("entering background git1");
         inForeground = true;
         sAppComponent.runner().postOnBackgroundHandler(new Runnable() {
             @Override
@@ -96,6 +97,7 @@ public class App extends Application  {
 
     private void onEnterBackground() {
         Timber.v("entering background");
+	    Timber.v("entering background git");
         Timber.v("entering background stash1");
 
         inForeground = false;
