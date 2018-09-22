@@ -85,6 +85,7 @@ public class App extends Application  {
         Timber.v("entering foreground");
 	    Timber.v("entering background git");
 	    Timber.v("entering background git1");
+	    Timber.v("entering background git2");
         inForeground = true;
         sAppComponent.runner().postOnBackgroundHandler(new Runnable() {
             @Override
