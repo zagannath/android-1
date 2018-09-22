@@ -96,6 +96,8 @@ public class App extends Application  {
 
     private void onEnterBackground() {
         Timber.v("entering background");
+        Timber.v("entering background stash1");
+
         inForeground = false;
         sAppComponent.runner().postOnBackgroundHandler(new Runnable() {
             @Override
